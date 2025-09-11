@@ -1,252 +1,329 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="simplified-shield.ico" />
-    <link rel="stylesheet" href="src/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
-    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Story+Script&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cloning Gate Web</title>
-  </head>
-  <body>
-    <header class="relative lg:h-[100vh] pb-10">
-      <div class="absolute inset-0 bg-black/50 -z-8"></div>
-      <div class="absolute inset-0 bg-[url('/images/penn-dental-cedar-2.jpeg')] bg-cover bg-center opacity-90 -z-10"></div>
-      <nav class="flex items-center justify-between mx-5 text-white border-b border-white py-2">
-        <div class="lg:hidden text-3xl">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="simplified-shield.ico" />
+  <link rel="stylesheet" href="src/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet" />
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Roboto:ital,wght@0,100..900;1,100..900&family=Story+Script&display=swap"
+    rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University of Pennsylvania</title>
+</head>
+
+<body class="font-[Roboto]">
+  <header class="relative lg:h-[100vh] pb-10">
+    <div class="absolute inset-0 bg-black/70 -z-8"></div>
+    <div class="absolute inset-0 bg-[url('/images/penn-dental-cedar-2.jpeg')] bg-cover bg-center opacity-90 -z-10">
+    </div>
+    <nav class="flex items-center justify-between px-5 text-white border-b border-white pb-3 pt-4 ">
+      <div class="lg:hidden text-3xl">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+      <img class="w-48" src="images/UPenn-logo.svg" alt="">
+      <div class="lg:hidden text-3xl">
+        <i class=" fa-solid fa-bars"></i>
+      </div>
+      <div class="hidden lg:flex items-center gap-3 text-white uppercase">
+        <div class="text-2xl">
           <i class="fa-solid fa-magnifying-glass"></i>
         </div>
-        <img class="w-60" src="images/UPenn-logo.svg" alt="">
-        <div class="lg:hidden text-3xl">
-          <i class=" fa-solid fa-bars"></i>
-        </div>
-        <div class="hidden lg:flex items-center gap-3 text-white uppercase">
-          <div class="text-2xl">
-            <i class="fa-solid fa-magnifying-glass"></i>
-          </div>
-          <select class="uppercase w-30" name="resources" id="resources">
-            <option value="resources" selected>Resources</option>
-            <option value="">Current Student</option>
-            <option value="">Faculty & Staff</option>
-            <option value="">Parents</option>
-          </select>
-          <button class="px-6 py-3 bg-red-700 uppercase">Give to Penn</button>
+        <select class="uppercase w-30" name="resources" id="resources">
+          <option value="resources" selected>Resources</option>
+          <option value="">Current Student</option>
+          <option value="">Faculty & Staff</option>
+          <option value="">Parents</option>
+        </select>
+        <button class="px-6 py-3 bg-red-700 uppercase">Give to Penn</button>
 
-        </div>
-      </nav>
-      <nav class="hidden lg:flex justify-end gap-4 font-medium text-white mt-2 mr-5 uppercase">
-        <select class="uppercase" name="acedemics" id="">
+      </div>
+    </nav>
+    <nav class="hidden lg:flex justify-end gap-4 font-medium text-white mt-2 mr-5 uppercase">
+
+
+      <div class="flex gap-2 items-center cursor-pointer">
+        <p class="hover:underline underline-offset-7 decoration-2 decoration-yellow-500">
+          Academics
+        </p>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+
+
+      <!-- <div>
+          <select class="hover:underline   uppercase" name="acedemics" id="">
           <option value="academics" selected hidden disabled>Academics</option>
         </select>
-        <a href="#">Admissions & Aid</a>
-        <a href="#">Athletics</a>
-        <select class="uppercase" name="acedemics" id="">
-          <option value="academics" selected hidden disabled>Research & Innovation</option>
-        </select>
-        <select class="uppercase" name="acedemics" id="">
-          <option value="academics" selected hidden disabled>Life at Penn</option>
-        </select>
-        <select class="uppercase" name="acedemics" id="">
-          <option value="academics" selected hidden disabled>About</option>
-        </select>
-      </nav>
+        </div> -->
 
-      <div class="z-10 mt-20 mx-5 text-white space-y-5 group lg:max-w-[60%]">
-        <h4 class="font-medium text-xl">Health & Medicine</h4>
-        <h1 class="text-5xl font-medium">Penn Dental on Cedar bridges medicine and dentistry, lightens ER demands</h1>
-        <div class="border-2 border-gray-500 w-15"></div>
-        <p class="text-xl font-medium lg:hidden lg:group-hover:block">Penn Dental Medicine at PHMC on Cedar is one of five community care programs the School of Dental Medicine operates. At Penn Dental on Cedar, part of the mission is to integrate dental on Cedar, part of the mission is to integrate dental and medical care.</p>
-      </div>
-    </header>
-    <section class="mt-20 w-[95%] lg:w-[95%] mx-auto">
-      <div class="flex justify-between items-center ">
-        <div class="space-y-2">
-          <h1 class="text-[#011f5b] text-5xl">News</h1>
-          <div class="border-2 border-gray-500 w-10"></div>
-        </div>
-        <select class="p-2 shadow-md shadow-gray-400" name="topics" id="">
-          <option class="text-left" value="topics" selected hidden disabled>Topics</option>
-          <option value="topics">Featured</option>
-          <option value="topics" >Arts & Humanities</option>
-          <option value="topics" >Social Sciences</option>
-        </select>
+
+      <a class="hover:underline underline-offset-7 decoration-2 decoration-yellow-500" href="#">Admissions & Aid</a>
+      <a class="hover:underline underline-offset-7 decoration-2 decoration-yellow-500"  href="#">Athletics</a>
+
+      <div class="flex gap-2 items-center cursor-pointer">
+        <p class="hover:underline underline-offset-7 decoration-2 decoration-yellow-500">
+          Research & Innovation
+        </p>
+        <i class="fa-solid fa-chevron-down"></i>
       </div>
 
-      <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-8">
-        <div class="lg:row-span-2 lg:col-span-2 border-b lg:border-r md:pr-8 border-gray-300 pb-2 space-y-3 group">
-          <div class=" overflow-hidden">
-            <img class=" scale-100 group-hover:scale-110 transition-all duration-400" src="images/alzheimers-pollution-teaser_0.jpeg" alt="">
-          </div>
-          <div class="flex flex-col items-center gap-3">
-            <p class="uppercase text-red-700 hover:underline">Health & medicine</p>
-            <p class="text-[#011f5b] group-hover:underline lg:text-3xl text-center">Exposure to air pollution worsens Alzheimer's disease</p>
-            <div class="border-2 border-gray-400 w-10"></div>
-          </div>
+      <div class="flex gap-2 items-center cursor-pointer">
+        <p class="hover:underline underline-offset-7 decoration-2 decoration-yellow-500">
+          Life at Penn
+        </p>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+
+      <div class="flex gap-2 items-center cursor-pointer">
+        <p class="hover:underline underline-offset-7 decoration-2 decoration-yellow-500">
+          About
+        </p>
+        <i class="fa-solid fa-chevron-down"></i>
+      </div>
+    </nav>
+
+    <div class="z-10 mt-20 mx-5 text-white space-y-5 group lg:max-w-[60%] cursor-pointer">
+      <h4 class="font-medium text-xl group-hover:-translate-y-5 transition duration-500">Health & Medicine</h4>
+      <h1 class="text-5xl font-medium font-[EB_Garamond-400] group-hover:-translate-y-5 transition duration-500">Penn Dental on Cedar bridges medicine and dentistry,
+        lightens ER demands</h1>
+      <div class="border-2 border-gray-500 w-15 group-hover:-translate-y-5 transition duration-500"></div>
+      <p class="text-xl font-medium lg:hidden lg:group-hover:block group-hover:-translate-y-5 transition duration-500">Penn Dental Medicine at PHMC on Cedar is one of five
+        community care programs the School of Dental Medicine operates. At Penn Dental on Cedar, part of the mission is
+        to integrate dental on Cedar, part of the mission is to integrate dental and medical care.</p>
+    </div>
+  </header>
+  <section class="mt-20 w-[95%] lg:w-[95%] mx-auto">
+    <div class="flex justify-between items-center ">
+      <div class="space-y-2">
+        <h1 class="text-[#011f5b] text-5xl font-[EB_Garamond]">News</h1>
+        <div class="border-2 border-gray-500 w-10"></div>
+      </div>
+      <select class="p-2 shadow-md shadow-gray-400 font-[EB_Garamond]" name="topics" id="">
+        <option class="text-left" value="topics" selected hidden disabled>Topics</option>
+        <option value="topics">Featured</option>
+        <option value="topics">Arts & Humanities</option>
+        <option value="topics">Social Sciences</option>
+      </select>
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-4 gap-8 mt-8">
+      <div class="lg:row-span-2 lg:col-span-2 border-b lg:border-r md:pr-8 border-gray-300 pb-2 space-y-3 group">
+        <div class=" overflow-hidden">
+          <img class=" scale-100 group-hover:scale-110 transition-all duration-400" src="images/3600Civic_-3.jpeg"
+            alt="">
         </div>
-        <div class="border-b pb-4 border-gray-300 space-y-3 group">
-          <div class="hidden md:block overflow-hidden">
-            <img class="scale-100 group-hover:scale-110 transition-all duration-400" src="images/alzheimers-pollution-teaser_0.jpeg" alt="">
-          </div>
-          <div class="flex flex-col items-center gap-3">
-            <p class="uppercase text-red-700 hover:underline">Health & medicine</p>
-            <p class="text-[#011f5b] group-hover:underline text-center">Exposure to air pollution worsens Alzheimer's disease</p>
-            <div class="border-2 border-gray-400 w-10"></div>
-          </div>
-        </div>
-        <div class="border-b pb-4 border-gray-300 space-y-3 group">
-          <div class="hidden md:block overflow-hidden">
-            <img class="scale-100 group-hover:scale-110 transition-all duration-400" src="images/alzheimers-pollution-teaser_0.jpeg" alt="">
-          </div>
-          <div class="flex flex-col items-center gap-3">
-            <p class="uppercase text-red-700 hover:underline">Health & medicine</p>
-            <p class="text-[#011f5b] group-hover:underline text-center">Exposure to air pollution worsens Alzheimer's disease</p>
-            <div class="border-2 border-gray-400 w-10"></div>
-          </div>
-        </div>
-        <div class="border-b pb-4 border-gray-300 space-y-3 group">
-          <div class="hidden md:block overflow-hidden">
-            <img class="scale-100 group-hover:scale-110 transition-all duration-400" src="images/alzheimers-pollution-teaser_0.jpeg" alt="">
-          </div>
-          <div class="flex flex-col items-center gap-3">
-            <p class="uppercase text-red-700 hover:underline">Health & medicine</p>
-            <p class="text-[#011f5b] group-hover:underline text-center">Exposure to air pollution worsens Alzheimer's disease</p>
-            <div class="border-2 border-gray-400 w-10"></div>
-          </div>
-        </div>
-        <div class="border-b pb-4 border-gray-300 space-y-3 group">
-          <div class="hidden md:block overflow-hidden">
-            <img class="scale-100 group-hover:scale-110 transition-all duration-400" src="images/alzheimers-pollution-teaser_0.jpeg" alt="">
-          </div>
-          <div class="flex flex-col items-center gap-3">
-            <p class="uppercase text-red-700 hover:underline">Health & medicine</p>
-            <p class="text-[#011f5b] group-hover:underline text-center">Exposure to air pollution worsens Alzheimer's disease</p>
-            <div class="border-2 border-gray-400 w-10"></div>
-          </div>
+        <div class="flex flex-col items-center gap-3">
+          <p class="uppercase text-red-700 hover:underline">Health & medicine</p>
+          <p class="text-[#011f5b] group-hover:underline lg:text-3xl text-center font-[EB_Garamond]">Reimagined Penn
+            Medicine facility set to usher in a bold new era of Immune Health discovery</p>
+          <div class="border-2 border-gray-400 w-10"></div>
         </div>
       </div>
-    </section>
-    <section class="mt-20">
-      <div class="relative ">
-        <img class="md:hidden" src="images/padl-lab-technician_1.jpeg" alt="">
-        <img class="hidden lg:block h-[100vh] w-full object-cover" src="images/padl-lab-technician_1 (1).jpeg" alt="">
-        <div class="absolute -bottom-50 left-[5%] p-3 bg-[#011f5b] w-[90%] md:w-[80%] lg:w-[43%] lg:h-auto lg:bottom-18 lg:left-7">
-          <div class=" text-white flex flex-col items-center gap-5 border border-gray-700 p-10 py-5 lg:py-12">
-            <p>HEALTH & MEDICINE</p>
-            <p class="text-xl text-center">Keeping food safe and animals healthy</p>
-            <div class="border-2 border-gray-500 w-8"></div>
-            <p class="text-center">As part of the Pennsylvania Animal Diagnostic Laboratory System (PADLS), Penn Vet’s New Bolton Center helps to protect animals and humans from health threats and minimize agricultural economic loss.</p>
-            <button class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl hover:text-red-700 hover:bg-white ">Learn More</button>
-          </div>
+      <div class="border-b pb-4 border-gray-300 space-y-3 group">
+        <div class="hidden md:block overflow-hidden">
+          <img class="scale-100 group-hover:scale-110 transition-all duration-400"
+            src="images/alzheimers-pollution-teaser_0.jpeg" alt="">
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <p class="uppercase text-red-700 hover:underline">Health & medicine</p>
+          <p class="text-[#011f5b] group-hover:underline text-center">Exposure to air pollution worsens Alzheimer's
+            disease</p>
+          <div class="border-2 border-gray-400 w-10"></div>
         </div>
       </div>
-    </section>
-    <section class="mt-75 w-[80%] md:w-[90%] mx-5 md:mx-auto md:mt-85 lg:mt-25">
-      <div class="space-y-4">
-          <h1 class="text-[#011f5b] text-5xl">Upcoming Events</h1>
-          <div class="border-2 border-gray-500 w-15"></div>
-      </div>
-      <div class="flex flex-col md:flex-row mt-5 gap-15">
-
-        <div class="md:pr-5 border-r border-gray-300">
-          <div class="relative overflow-hidden">
-            <img class="scale-100 hover:scale-110 transition-all duration-300 w-full object-cover h-80" src="images/algorithm-health-teaser.jpeg" alt="">
-            <div class="absolute top-5 right-5 w-14">
-              <p class=" text-white bg-red-700 px-2 text-center">SEP</p>
-              <p class="text-[#011f5b] text-2xl bg-white p-2 text-center">11</p>
-            </div>
-            <div class="absolute bottom-0 left-0 space-y-2 p-3 bg-white w-[75%]">
-              <p class="uppercase text-[#011f5b]">Special Events</p>
-              <div class="border-2 border-gray-400 w-8"></div>
-            </div>
-          </div>
-          <div class="space-y-2 mt-3">
-            <h2 class="text-[#011f5b] text-2xl hover:underline cursor-pointer">Cores Day 2025</h2>
-            <p class="text-[#011f5b]">The annual Cores Day event is a joint venture between Penn Vet, the Children’s Hospital of Philadelphia, the Perelman School of Medicine, and the Wistar Institute to showcase the many biomedical research services and resources available at Penn. This program is an opportunity for students, faculty, and staff to learn about research core facilities across the University and speak with core facility personnel. Register to attend.</p>
-          </div>
+      <div class="border-b pb-4 border-gray-300 space-y-3 group">
+        <div class="hidden md:block overflow-hidden">
+          <img class="scale-100 group-hover:scale-110 transition-all duration-400" src="images/two-geeks.jpeg" alt="">
         </div>
-
-        <div class="md:px-5 border-r border-gray-300">
-          <div class="relative overflow-hidden">
-            <img class="scale-100 hover:scale-110 transition-all duration-300 w-full object-cover h-80" src="images/algorithm-health-teaser.jpeg" alt="">
-            <div class="absolute top-5 right-5 w-14">
-              <p class=" text-white bg-red-700 px-2 text-center">SEP</p>
-              <p class="text-[#011f5b] text-2xl bg-white p-2 text-center">11</p>
-            </div>
-            <div class="absolute bottom-0 left-0 space-y-2 p-3 bg-white w-[75%]">
-              <p class="uppercase text-[#011f5b]">Special Events</p>
-              <div class="border-2 border-gray-400 w-8"></div>
-            </div>
-          </div>
-          <div class="space-y-2 mt-3">
-            <h2 class="text-[#011f5b] text-2xl hover:underline cursor-pointer">Cores Day 2025</h2>
-            <p class="text-[#011f5b]">The annual Cores Day event is a joint venture between Penn Vet, the Children’s Hospital of Philadelphia, the Perelman School of Medicine, and the Wistar Institute to showcase the many biomedical research services and resources available at Penn. This program is an opportunity for students, faculty, and staff to learn about research core facilities across the University and speak with core facility personnel. Register to attend.</p>
-          </div>
-        </div>
-
-        <div class="pl-5">
-          <div class="relative overflow-hidden">
-            <img class="scale-100 hover:scale-110 transition-all duration-300 w-full object-cover h-80" src="images/algorithm-health-teaser.jpeg" alt="">
-            <div class="absolute top-5 right-5 w-14">
-              <p class=" text-white bg-red-700 px-2 text-center">SEP</p>
-              <p class="text-[#011f5b] text-2xl bg-white p-2 text-center">11</p>
-            </div>
-            <div class="absolute bottom-0 left-0 space-y-2 p-3 bg-white w-[75%]">
-              <p class="uppercase text-[#011f5b]">Special Events</p>
-              <div class="border-2 border-gray-400 w-8"></div>
-            </div>
-          </div>
-          <div class="space-y-2 mt-3">
-            <h2 class="text-[#011f5b] text-2xl hover:underline cursor-pointer">Cores Day 2025</h2>
-            <p class="text-[#011f5b]">The annual Cores Day event is a joint venture between Penn Vet, the Children’s Hospital of Philadelphia, the Perelman School of Medicine, and the Wistar Institute to showcase the many biomedical research services and resources available at Penn. This program is an opportunity for students, faculty, and staff to learn about research core facilities across the University and speak with core facility personnel. Register to attend.</p>
-          </div>
-        </div>
-      
-      </div>
-    </section>
-    <section class="mt-20">
-      <h4 class="text-[#011f5b] hover:underline text-center lg:text-left lg:ml-[3%] cursor-pointer">More Events via Penn Today</h4>
-
-      <div class="flex flex-col gap-5 md:flex-row w-full md:w-[95%] mx-auto mt-15">
-        <div class="p-3 bg-[#011f5b] w-[90%] md:w-[80%] lg:w-[90%] mx-auto">
-          <div class=" text-white flex flex-col items-center gap-7 border border-gray-700 p-10 py-13">
-            <p class="text-xl text-center">Federal Government Updates</p>
-            <div class="border-2 border-gray-500 w-8"></div>
-            <p class="text-center">Penn is closely monitoring federal policy changes affecting institutions of higher education and academic health systems.</p>
-            <button class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl hover:text-red-700 hover:bg-white ">Learn More</button>
-          </div>
-        </div>
-
-        <div class="p-3 bg-[#011f5b] w-[90%] md:w-[80%] lg:w-[90%] mx-auto">
-          <div class=" text-white flex flex-col items-center gap-7 border border-gray-700 p-10 py-13">
-            <p class="text-xl text-center">Title IX Compliance in Athletics</p>
-            <div class="border-2 border-gray-500 w-8"></div>
-            <p class="text-center">Penn's Title IX Resolution with the U.S. Department of Education Office for Civil Rights</p>
-            <button class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl hover:text-red-700 hover:bg-white ">Learn More</button>
-          </div>
+        <div class="flex flex-col items-center gap-3">
+          <p class="uppercase text-red-700 hover:underline">Technology</p>
+          <p class="text-[#011f5b] group-hover:underline text-center">Guiding light towards smarter technology</p>
+          <div class="border-2 border-gray-400 w-10"></div>
         </div>
       </div>
-    </section>
-
-    <section class="mt-25">
-      <div class="relative">
-        <img class="z-1 h-[120vh]" src="images/blue-pattern-bg.png" alt="">
-        <div class="z-2 absolute top-15 left-[10%]  flex flex-col items-center gap-5 text-white w-[80%] lg:w-[60%] lg:left-[20%]">
-           <p class="text-3xl text-center">Penn Priorities</p>
-            <div class="border-2 border-gray-500 w-10"></div>
-            <p class="text-center">Penn's Title IX Resolution with the U.S. Department of Education Office for Civil Rights</p>
+      <div class="border-b pb-4 border-gray-300 space-y-3 group">
+        <div class="hidden md:block overflow-hidden">
+          <img class="scale-100 group-hover:scale-110 transition-all duration-400"
+            src="images/kane-charles-social (1).jpeg" alt="">
         </div>
-        <div class="z-2 absolute top-60 left-[5%] flex gap-8 overflow-x-auto scrollbar-hide w-[90%]">
+        <div class="flex flex-col items-center gap-3">
+          <p class="uppercase text-red-700 hover:underline">Natural Sciences</p>
+          <p class="text-[#011f5b] group-hover:underline text-center">Charles Kane to receive Lorentz Medal</p>
+          <div class="border-2 border-gray-400 w-10"></div>
+        </div>
+      </div>
+      <div class="border-b pb-4 border-gray-300 space-y-3 group">
+        <div class="hidden md:block overflow-hidden">
+          <img class="scale-100 group-hover:scale-110 transition-all duration-400" src="images/white-coat.jpeg" alt="">
+        </div>
+        <div class="flex flex-col items-center gap-3">
+          <p class="uppercase text-red-700 hover:underline">Health & medicine</p>
+          <p class="text-[#011f5b] group-hover:underline text-center">White coat ceremonies: A professional milestone
+          </p>
+          <div class="border-2 border-gray-400 w-10"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-20">
+    <div class="relative ">
+      <img class="md:hidden" src="images/padl-lab-technician_1.jpeg" alt="">
+      <img class="hidden lg:block h-[100vh] w-full object-cover" src="images/padl-lab-technician_1 (1).jpeg" alt="">
+      <div
+        class="absolute -bottom-50 left-[5%] p-3 bg-[#011f5b] w-[90%] md:w-[80%] lg:w-[43%] lg:h-auto lg:bottom-18 lg:left-7">
+        <div class=" text-white flex flex-col items-center gap-5 border border-gray-700 p-10 py-5 lg:py-12">
+          <p>HEALTH & MEDICINE</p>
+          <p class="text-xl text-center">Keeping food safe and animals healthy</p>
+          <div class="border-2 border-gray-500 w-8"></div>
+          <p class="text-center">As part of the Pennsylvania Animal Diagnostic Laboratory System (PADLS), Penn Vet’s New
+            Bolton Center helps to protect animals and humans from health threats and minimize agricultural economic
+            loss.</p>
+          <button
+            class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl hover:text-red-700 hover:bg-white ">Learn
+            More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="mt-75 w-[80%] md:w-[90%] mx-5 md:mx-auto md:mt-85 lg:mt-25">
+    <div class="space-y-4">
+      <h1 class="text-[#011f5b] text-5xl font-[EB_Garamond]">Upcoming Events</h1>
+      <div class="border-2 border-gray-500 w-15"></div>
+    </div>
+    <div class="flex flex-col md:flex-row mt-5 gap-15">
+
+      <div class="md:pr-5 border-r border-gray-300">
+        <div class="relative overflow-hidden">
+          <img class="scale-100 hover:scale-110 transition-all duration-300 w-full object-cover h-80"
+            src="images/algorithm-health-teaser.jpeg" alt="">
+          <div class="absolute top-5 right-5 w-14">
+            <p class=" text-white bg-red-700 px-2 text-center">SEP</p>
+            <p class="text-[#011f5b] text-2xl bg-white p-2 text-center">11</p>
+          </div>
+          <div class="absolute bottom-0 left-0 space-y-2 p-3 bg-white w-[75%]">
+            <p class="uppercase text-[#011f5b]">Special Events</p>
+            <div class="border-2 border-gray-400 w-8"></div>
+          </div>
+        </div>
+        <div class="space-y-2 mt-3">
+          <h2 class="text-[#011f5b] text-2xl hover:underline cursor-pointer font-[EB_Garamond]">Cores Day 2025</h2>
+          <p class="text-[#011f5b]">The annual Cores Day event is a joint venture between Penn Vet, the Children’s
+            Hospital of Philadelphia, the Perelman School of Medicine, and the Wistar Institute to showcase the many
+            biomedical research services and resources available at Penn. This program is an opportunity for students,
+            faculty, and staff to learn about research core facilities across the University and speak with core
+            facility personnel. Register to attend.</p>
+        </div>
+      </div>
+
+      <div class="md:px-5 border-r border-gray-300">
+        <div class="relative overflow-hidden">
+          <img class="scale-100 hover:scale-110 transition-all duration-300 w-full object-cover h-80"
+            src="images/dollar.jpeg" alt="">
+          <div class="absolute top-5 right-5 w-14">
+            <p class=" text-white bg-red-700 px-2 text-center">SEP</p>
+            <p class="text-[#011f5b] text-2xl bg-white p-2 text-center">11</p>
+          </div>
+          <div class="absolute bottom-0 left-0 space-y-2 p-3 bg-white w-[75%]">
+            <p class="uppercase text-[#011f5b]">Talks</p>
+            <div class="border-2 border-gray-400 w-8"></div>
+          </div>
+        </div>
+        <div class="space-y-2 mt-3">
+          <h2 class="text-[#011f5b] text-2xl hover:underline cursor-pointer font-[EB_Garamond]">Record Borrowing Budget
+            Strains</h2>
+          <p class="text-[#011f5b]">The annual Cores Day event is a joint venture between Penn Vet, the Children’s
+            Hospital of Philadelphia, the Perelman School of Medicine, and the Wistar Institute to showcase the many
+            biomedical research services and resources available at Penn. This program is an opportunity for students,
+            faculty, and staff to learn about research core facilities across the University and speak with core
+            facility personnel. Register to attend.</p>
+        </div>
+      </div>
+
+      <div class="pl-5">
+        <div class="relative overflow-hidden">
+          <img class="scale-100 hover:scale-110 transition-all duration-300 w-full object-cover h-80"
+            src="images/wharton-ai-teaser.jpeg" alt="">
+          <div class="absolute top-5 right-5 w-14">
+            <p class=" text-white bg-red-700 px-2 text-center">SEP</p>
+            <p class="text-[#011f5b] text-2xl bg-white p-2 text-center">11</p>
+          </div>
+          <div class="absolute bottom-0 left-0 space-y-2 p-3 bg-white w-[75%]">
+            <p class="uppercase text-[#011f5b]">Special Events</p>
+            <div class="border-2 border-gray-400 w-8"></div>
+          </div>
+        </div>
+        <div class="space-y-2 mt-3">
+          <h2 class="text-[#011f5b] text-2xl hover:underline cursor-pointer font-[EB_Garamond]">Wharton People Analytics
+            Info Session</h2>
+          <p class="text-[#011f5b]">The annual Cores Day event is a joint venture between Penn Vet, the Children’s
+            Hospital of Philadelphia, the Perelman School of Medicine, and the Wistar Institute to showcase the many
+            biomedical research services and resources available at Penn. This program is an opportunity for students,
+            faculty, and staff to learn about research core facilities across the University and speak with core
+            facility personnel. Register to attend.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  <section class="mt-20">
+    <h4 class="text-[#011f5b] hover:underline text-center lg:text-left lg:ml-[3%] cursor-pointer font-[EB_Garamond]">
+      More Events via Penn Today</h4>
+
+    <div class="flex flex-col gap-5 md:flex-row w-full md:w-[95%] mx-auto mt-15">
+      <div class="p-3 bg-[#011f5b] w-[90%] md:w-[80%] lg:w-[90%] mx-auto">
+        <div class=" text-white flex flex-col items-center gap-7 border border-gray-700 p-10 py-13">
+          <p class="text-2xl text-center font-[EB_Garamond]">Federal Government Updates</p>
+          <div class="border-2 border-gray-500 w-8"></div>
+          <p class="text-center">Penn is closely monitoring federal policy changes affecting institutions of higher
+            education and academic health systems.</p>
+          <button
+            class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl hover:text-red-700 hover:bg-white ">Learn
+            More</button>
+        </div>
+      </div>
+
+      <div class="p-3 bg-[#011f5b] w-[90%] md:w-[80%] lg:w-[90%] mx-auto">
+        <div class=" text-white flex flex-col items-center gap-7 border border-gray-700 p-10 py-13">
+          <p class="text-2xl text-center font-[EB_Garamond]">Title IX Compliance in Athletics</p>
+          <div class="border-2 border-gray-500 w-8"></div>
+          <p class="text-center">Penn's Title IX Resolution with the U.S. Department of Education Office for Civil
+            Rights</p>
+          <button
+            class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl hover:text-red-700 hover:bg-white ">Learn
+            More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mt-25">
+    <div class="relative">
+      <img class="z-1 h-[120vh]" src="images/blue-pattern-bg.png" alt="">
+      <div
+        class="z-2 absolute top-15 left-[10%]  flex flex-col items-center gap-5 text-white w-[80%] lg:w-[60%] lg:left-[20%]">
+        <p class="text-4xl text-center font-[EB_Garamond]">Penn Priorities</p>
+        <div class="border-2 border-gray-500 w-10"></div>
+        <p class="text-center">Penn's Title IX Resolution with the U.S. Department of Education Office for Civil Rights
+        </p>
+      </div>
+      <div class="z-2 absolute top-60 left-[5%] flex gap-8 overflow-x-auto scrollbar-hide w-[90%]">
 
         <div class="relative shrink-0 w-full lg:w-[70%] mt-5 outline-2">
           <img class="w-full" src="images/P-101788-Master-V1-117.jpeg" alt="">
           <div class="absolute bottom-0 lg: flex w-full lg:w-[40%]">
             <p class="grow-4 lg:w-[66%] bg-white p-5 text-[#011f5b]">Penn Forward</p>
-            <div class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
+            <div
+              class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
               <p>></p>
             </div>
           </div>
@@ -256,7 +333,8 @@
           <img class="w-full" src="images/P-101788-Master-V1-117.jpeg" alt="">
           <div class="absolute bottom-0 flex w-full lg:w-[40%]">
             <p class="grow-4 lg:w-[66%] bg-white p-5 text-[#011f5b]">Penn Forward</p>
-            <div class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
+            <div
+              class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
               <p>></p>
             </div>
           </div>
@@ -266,7 +344,8 @@
           <img class="w-full" src="images/P-101788-Master-V1-117.jpeg" alt="">
           <div class="absolute bottom-0 flex w-full lg:w-[40%]">
             <p class="grow-4 lg:w-[66%] bg-white p-5 text-[#011f5b]">Penn Forward</p>
-            <div class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
+            <div
+              class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
               <p>></p>
             </div>
           </div>
@@ -276,7 +355,8 @@
           <img class="w-full" src="images/P-101788-Master-V1-117.jpeg" alt="">
           <div class="absolute bottom-0 flex w-full lg:w-[40%]">
             <p class="grow-4 lg:w-[66%] bg-white p-5 text-[#011f5b]">Penn Forward</p>
-            <div class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
+            <div
+              class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
               <p>></p>
             </div>
           </div>
@@ -286,148 +366,162 @@
           <img class="w-full" src="images/P-101788-Master-V1-117.jpeg" alt="">
           <div class="absolute bottom-0 flex w-full lg:w-[40%]">
             <p class="grow-4 lg:w-[66%] bg-white p-5 text-[#011f5b]">Penn Forward</p>
-            <div class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
+            <div
+              class="grow-1 lg:w-[33%] bg-red-700 text-white text-xl flex items-center justify-center hover:bg-red-800">
               <p>></p>
             </div>
           </div>
-        </div>    
+        </div>
       </div>
-    </section>
-    <section class="mt-10 md:mt-40 lg:mt-40">
-      <div class="flex flex-col items-center gap-4  ">
-        <h1 class="text-[#011f5b] text-4xl">Stay Connected</h1>
-        <div class="border-2 border-gray-500 w-15"></div>
-      </div>
+  </section>
+  <section class="mt-10 md:mt-40 lg:mt-40">
+    <div class="flex flex-col items-center gap-4  ">
+      <h1 class="text-[#011f5b] text-5xl font-[EB_Garamond]">Stay Connected</h1>
+      <div class="border-2 border-gray-500 w-15"></div>
+    </div>
 
-      <div class="w-[95%] h-72 overflow-auto flex lg:gap-5 mt-8 mx-auto mb-10 ">
-        <div class="relative shrink-0 md:grow-1 w-64 group">
-          <img class="h-full w-full object-cover object-center" src="images/sheerpool-sq.png" alt="">
-          <div class="hidden group-hover:flex absolute inset-0 bg-red-800/70 text-white flex-col justify-center gap-6 px-3">
-            <p>Sheer Pool at the Pottruck Center reopened this summer after a yearlong renovation. The new features and improvements have made the pool safer and more accessible. Swim lessons and other programming have now returned with the fall semester.</p>
-            <div class="flex gap-2 items-center">
-            <div>
-               <i class="fa-brands fa-x-twitter text-white text-2xl"></i>
-            </div>
-            <p>@UOPENN</p>
-          </div>
-          </div>
-        </div>
-
-        <div class="shrink-0 md:grow-1 w-64 text-white outline bg-[#011f5b] py-5 px-5 space-y-4 flex flex-col  justify-center">
-          <p class="text-sm">When Little Dove sat down mid-walk, her owner, Elizabeth Mauldin, a dermatopathologist at @PennVetSchool, knew something was off. What followed was a swift, coordinated response from a veterinary team whose skill and care gave the rescue dog a second chance.</p>
+    <div class="w-[95%] h-72 overflow-auto flex lg:gap-5 mt-8 mx-auto mb-10 ">
+      <div class="relative shrink-0 md:grow-1 w-64 group">
+        <img class="h-full w-full object-cover object-center" src="images/sheerpool-sq.png" alt="">
+        <div
+          class="hidden group-hover:flex absolute inset-0 bg-red-800/70 text-white flex-col justify-center gap-6 px-3">
+          <p>Sheer Pool at the Pottruck Center reopened this summer after a yearlong renovation. The new features and
+            improvements have made the pool safer and more accessible. Swim lessons and other programming have now
+            returned with the fall semester.</p>
           <div class="flex gap-2 items-center">
             <div>
-               <i class="fa-brands fa-x-twitter text-white text-2xl"></i>
+              <i class="fa-brands fa-x-twitter text-white text-2xl"></i>
             </div>
             <p>@UOPENN</p>
           </div>
         </div>
+      </div>
 
-        <div class="relative shrink-0 md:grow-1 w-64 group">
-          <img class="h-full w-full object-cover object-center" src="images/youmakecampuswhole-sq.png" alt="">
-          <div class="hidden group-hover:flex absolute inset-0 bg-red-800/70 text-white flex-col justify-center  gap-6  px-3">
-            <p>Good to have you all back.</p>
-            <div class="flex gap-2 items-center">
+      <div
+        class="shrink-0 md:grow-1 w-64 text-white outline bg-[#011f5b] py-5 px-5 space-y-4 flex flex-col  justify-center">
+        <p class="text-sm">When Little Dove sat down mid-walk, her owner, Elizabeth Mauldin, a dermatopathologist at
+          @PennVetSchool, knew something was off. What followed was a swift, coordinated response from a veterinary team
+          whose skill and care gave the rescue dog a second chance.</p>
+        <div class="flex gap-2 items-center">
+          <div>
+            <i class="fa-brands fa-x-twitter text-white text-2xl"></i>
+          </div>
+          <p>@UOPENN</p>
+        </div>
+      </div>
+
+      <div class="relative shrink-0 md:grow-1 w-64 group">
+        <img class="h-full w-full object-cover object-center" src="images/youmakecampuswhole-sq.png" alt="">
+        <div
+          class="hidden group-hover:flex absolute inset-0 bg-red-800/70 text-white flex-col justify-center  gap-6  px-3">
+          <p>Good to have you all back.</p>
+          <div class="flex gap-2 items-center">
             <div>
-               <i class="fa-brands fa-x-twitter text-white text-2xl"></i>
+              <i class="fa-brands fa-x-twitter text-white text-2xl"></i>
             </div>
             <p>@UOPENN</p>
           </div>
-          </div>
-        </div>
-
-      </div>
-
-      <div class="flex justify-content">
-        <div class="flex my-15 gap-15 justify-center flex-wrap w-[80%] mx-auto">
-          <i class="fa-brands fa-instagram text-[#011f5b] text-xl"></i>
-          <i class="fa-brands fa-facebook text-[#011f5b] 0 text-xl"></i>
-          <i class="fa-brands fa-threads text-[#011f5b] 0 text-xl"></i>
-          <i class="fa-brands fa-youtube text-[#011f5b] 0 text-xl"></i>
-          <i class="fa-brands fa-flickr text-[#011f5b] 0 text-xl"></i>
-          <i class="fa-brands fa-linkedin-in text-[#011f5b] 0 text-xl"></i>          
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="bg-[#011f5b]">
-          <div class=" text-white flex flex-col items-center gap-7 border border-gray-700 p-10 py-13">
-            <p class="text-xl text-center">Equal Opportunity and Nondiscrimination at Penn</p>
-            <p class="text-center">The University of Pennsylvania seeks talented students, faculty, and staff with a wide variety of backgrounds, experiences, and perspectives. The University of Pennsylvania does not discriminate on the basis of race, color, sex, sexual orientation, religion, creed, national origin (including shared ancestry or ethnic characteristics), citizenship status, age, disability, veteran status or any other class protected under applicable federal, state, or local law in the administration of its admissions, financial aid, educational or athletic programs, or other University-administered programs or in its employment practices. Questions or complaints regarding this policy should be directed to the executive director of the Office of Equal Opportunity Programs; Franklin Building, 3451 Walnut Street, Suite 421, Philadelphia, PA 19104-6106; or (215) 898-6993.</p>
-            <button class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl hover:text-[#011f5b] hover:bg-white no-wrap ">Nondiscrimination statement</button>
-          </div>
-        </div>
-    </section>
-    <footer class="relative bg-[#011f5b] py-10 text-white font-medium md:px-5">
-
-
-      <div class="absolute inset-0 bg-[url('/images/footer-16.png')] bg-cover bg-center"></div>
-      
-
-      <div class="flex flex-col md:flex-row gap-15 items-center">
-        <div class="md:w-[37%] space-y-15 text-center md:text-left">
-          <div class="space-y-5">
-            <img class="w-60" src="images/UPenn-logo.svg" alt="">
-            <p>Philadelphia, PA 19104</p>
-            <p>Telephone: <span class="text-blue-700 hover:underline cursor-pointer">(215) 898-5000</span></p>            
-          </div>
-          <ul class="space-y-5 uppercase">
-            <li>Contact Us</li>
-            <li>Maps</li>
-            <li>Parking</li>
-          </ul>
-        </div>
-
-        <div class="md:w-[25%] md:mt-20 md:text-left">
-          <div class="space-y-2 flex flex-col items-center md:items-start">
-            <h3 class="text-2xl">Navigate</h3>
-            <div class="border-2 border-gray-500 w-8"></div>
-          </div>
-          <ul class="space-y-5 uppercase mt-10 text-center md:text-left">
-            <li>Alumni</li>
-            <li>Athletics</li>
-            <li>Belonging</li>
-            <li>Health Care</li>
-            <li>Libraries</li>
-            <li>Online Learning</li>
-            <li>Penn Global</li>
-          </ul>
-        </div>
-
-
-        <div class="md:w-[37%] md:text-left text-white flex flex-col items-center md:items-start gap-7 p-10 mx-5">
-            <p class="text-xl text-center md:text-left">Penn's Heritage</p>
-            <p class="text-center md:text-left">As America’s first university, Penn has a history that dates back to 1740 and shares many ties with the colonial city of Philadelphia and the birth of our nation.</p>
-            <button class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl hover:text-[#011f5b] hover:bg-white ">Our History</button>
         </div>
       </div>
 
-      <div class="space-y-10 mt-15 md:flex justify-between">
-        <ul class="space-y-4 md:space-y-0 md:order-2 md:flex justify-end md:w-[66%] text-center flex-wrap gap-5  m-3 uppercase">
-          <li>Disclaimer</li>
-          <li>Emergency /Services</li>
-          <li>Nondiscrimination</li>
-          <li>Privacy policy</li>
-          <li>Report Accessibility Issues and Get Help</li>
-          <li>Report Copyright Infringement</li>
+    </div>
+
+    <div class="flex justify-content">
+      <div class="flex my-15 gap-15 justify-center flex-wrap w-[80%] mx-auto">
+        <i class="fa-brands fa-instagram text-[#011f5b] text-xl"></i>
+        <i class="fa-brands fa-facebook text-[#011f5b] 0 text-xl"></i>
+        <i class="fa-brands fa-threads text-[#011f5b] 0 text-xl"></i>
+        <i class="fa-brands fa-youtube text-[#011f5b] 0 text-xl"></i>
+        <i class="fa-brands fa-flickr text-[#011f5b] 0 text-xl"></i>
+        <i class="fa-brands fa-linkedin-in text-[#011f5b] 0 text-xl"></i>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="bg-[#011f5b]">
+      <div class=" text-white flex flex-col items-center gap-7 border border-gray-700 p-10 py-13">
+        <p class="text-2xl text-center font-[EB_Garamond]">Equal Opportunity and Nondiscrimination at Penn</p>
+        <p class="text-center">The University of Pennsylvania seeks talented students, faculty, and staff with a wide
+          variety of backgrounds, experiences, and perspectives. The University of Pennsylvania does not discriminate on
+          the basis of race, color, sex, sexual orientation, religion, creed, national origin (including shared ancestry
+          or ethnic characteristics), citizenship status, age, disability, veteran status or any other class protected
+          under applicable federal, state, or local law in the administration of its admissions, financial aid,
+          educational or athletic programs, or other University-administered programs or in its employment practices.
+          Questions or complaints regarding this policy should be directed to the executive director of the Office of
+          Equal Opportunity Programs; Franklin Building, 3451 Walnut Street, Suite 421, Philadelphia, PA 19104-6106; or
+          (215) 898-6993.</p>
+        <button
+          class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl hover:text-[#011f5b] hover:bg-white no-wrap ">Nondiscrimination
+          statement</button>
+      </div>
+    </div>
+  </section>
+  <footer class="relative bg-[#011f5b] py-10 text-white font-medium md:px-5">
+
+
+    <div class="absolute inset-0 bg-[url('/images/footer-16.png')] bg-cover bg-center"></div>
+
+
+    <div class="flex flex-col md:flex-row gap-15 items-center">
+      <div class="md:w-[37%] space-y-15 text-center md:text-left">
+        <div class="space-y-5">
+          <img class="w-60" src="images/UPenn-logo.svg" alt="">
+          <p>Philadelphia, PA 19104</p>
+          <p>Telephone: <span class="text-blue-700 hover:underline cursor-pointer">(215) 898-5000</span></p>
+        </div>
+        <ul class="space-y-5 uppercase">
+          <li>Contact Us</li>
+          <li>Maps</li>
+          <li>Parking</li>
         </ul>
-
-        <div class="flex gap-2 items-center justify-center md:order-1 md:w-[33%] md:justify-start">
-          <div class="border border-white p-5 size-16">
-            <i class="fa-solid fa-arrow-up"></i>
-          </div>
-          <p class="uppercase">Back to top</p>
-        </div>
-
       </div>
-    </footer>
-  </body>
+
+      <div class="md:w-[25%] md:mt-20 md:text-left">
+        <div class="space-y-2 flex flex-col items-center md:items-start">
+          <h3 class="text-3xl font-[EB_Garamond]">Navigate</h3>
+          <div class="border-2 border-gray-500 w-8"></div>
+        </div>
+        <ul class="space-y-5 uppercase mt-10 text-center md:text-left">
+          <li>Alumni</li>
+          <li>Athletics</li>
+          <li>Belonging</li>
+          <li>Health Care</li>
+          <li>Libraries</li>
+          <li>Online Learning</li>
+          <li>Penn Global</li>
+        </ul>
+      </div>
+
+
+      <div class="md:w-[37%] md:text-left text-white flex flex-col items-center md:items-start gap-7 p-10 mx-5">
+        <p class="text-2xl text-center md:text-left font-[EB_Garamond]">Penn's Heritage</p>
+        <p class="text-center md:text-left italic">As America’s first university, Penn has a history that dates back to
+          1740 and shares many ties with the colonial city of Philadelphia and the birth of our nation.</p>
+        <button class="uppercase px-10 py-4 border border-white mt-3 rounded-4xl">Our History</button>
+      </div>
+    </div>
+
+    <div class="space-y-10 mt-15 md:flex justify-between">
+      <ul
+        class="space-y-4 md:space-y-0 md:order-2 md:flex justify-end md:w-[66%] text-center flex-wrap gap-5  m-3 uppercase">
+        <li>Disclaimer</li>
+        <li>Emergency /Services</li>
+        <li>Nondiscrimination</li>
+        <li>Privacy policy</li>
+        <li>Report Accessibility Issues and Get Help</li>
+        <li>Report Copyright Infringement</li>
+      </ul>
+
+      <div class="flex gap-2 items-center justify-center md:order-1 md:w-[33%] md:justify-start">
+        <div class="border border-white p-5 size-16">
+          <i class="fa-solid fa-arrow-up"></i>
+        </div>
+        <p class="uppercase">Back to top</p>
+      </div>
+
+    </div>
+  </footer>
+</body>
+
 </html>
-
-
-
-
-
-
-
